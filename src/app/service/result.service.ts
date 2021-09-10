@@ -24,5 +24,9 @@ export class ResultService {
     return this.apiService.get(environment.simulatedSeasonResultsEndpoint);
   }
 
+  getDonationResults() {
+    return this.apiService.get(environment.seasonDonationResults);
+  }
+
 
 }

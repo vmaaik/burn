@@ -3,5 +3,6 @@ export const environment = {
   matchResultsEndpoint: "results/matches/active",
   seasonResultsEndpoint: "results/seasons/active",
   simulatedSeasonResultsEndpoint: "results/seasons/active/simulated",
+  seasonDonationResults: "results/seasons/active/donation",
   production: true
 };
