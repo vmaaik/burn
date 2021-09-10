@@ -3,6 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  baseApiUrl: "http://localhost:8080/",
+  matchResultsEndpoint: "results/matches/active",
+  seasonResultsEndpoint: "results/seasons/active",
+  simulatedSeasonResultsEndpoint: "results/seasons/active/simulated",
   production: false
 };
 
