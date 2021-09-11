@@ -1,35 +1,38 @@
-<ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
-  <li [ngbNavItem]="1">
-    <a ngbNavLink>Wyniki</a>
-    <ng-template ngbNavContent>
-      <app-live>
-      </app-live>
-    </ng-template>
-  </li>
-  <li [ngbNavItem]="2">
-    <a ngbNavLink>Sezon</a>
-    <ng-template ngbNavContent>
-      <app-season></app-season>
-    </ng-template>
-  </li>
-  <li [ngbNavItem]="3">
-    <a ngbNavLink>Zbiórka</a>
-    <ng-template ngbNavContent>
-      <app-donation></app-donation>
-    </ng-template>
-  </li>
-  <li [ngbNavItem]="4">
-    <a ngbNavLink>Stats</a>
-    <ng-template ngbNavContent>
-      <p>Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
-        Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
-        Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
-        egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
-        tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
-        magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
-        neque. Phasellus nec tortor vel tellus pulvinar feugiat.</p>
-    </ng-template>
-  </li>
-</ul>
+<div class="container">
+<div class="row">
+  <div class="col app-column">
+    <app-menu-item
+      [title]="'NA ŻYWO'"
+      [height]="'150px'"
+      [subtitle]="'Wyniki aktualnej kolejki'"
+      [link]="'live'"
+    ></app-menu-item>
+  </div>
 
-<div [ngbNavOutlet]="nav" class="mt-2"></div>
+  <div class="col app-column">
+    <app-menu-item
+      [title]="'SEZON'"
+      [height]="'150px'"
+      [subtitle]="'Ranking oraz symulacja'"
+    >
+
+    </app-menu-item>
+
+  </div>
+</div>
+  <div class="row">
+
+
+    <div class="col app-column">
+      <app-menu-item [title]="'TERMINARZ'" ></app-menu-item>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col app-column">
+      <app-menu-item [title]="'ZBIÓRKA'" [subtitle]="'Wyniki zbiórki charytatywnej'"></app-menu-item>
+    </div>
+    <div class="col app-column">
+      <app-menu-item  [title]="'STATS'" [subtitle]="'Statystyki sezonu, klasyfikacja medalowa'"></app-menu-item>
+    </div>
+  </div>
+</div>

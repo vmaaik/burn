@@ -14,6 +14,9 @@ import { SeasonResultsItemComponent } from './components/season/season-results-i
 import { DonationComponent } from './components/donation/donation.component';
 import { DonationResultsComponent } from './components/donation/donation-results/donation-results.component';
 import { DonationResultsItemComponent } from './components/donation/donation-results-item/donation-results-item.component';
+import { MenuItemComponent } from './components/navigation/menu-item/menu-item.component';
+import { NavbarComponent } from './components/navigation/navbar/navbar.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -27,13 +30,15 @@ import { DonationResultsItemComponent } from './components/donation/donation-res
     SeasonResultsItemComponent,
     DonationComponent,
     DonationResultsComponent,
-    DonationResultsItemComponent
+    DonationResultsItemComponent,
+    MenuItemComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
