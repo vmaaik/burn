@@ -1,0 +1,13 @@
+.app-card{
+  margin: 10px;
+  border: black solid 2px;
+  border-radius: 15px;
+  background: white;
+}
+
+.app-card-title{
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+}

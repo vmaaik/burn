@@ -1,9 +1,10 @@
-<div class="card text-center">
-  <div class="card-header">
-    <h5 class="card-title">{{matchResult.playerName}} - {{matchResult.opponentName}}</h5>
-  </div>
+<div class="card text-center app-card">
   <div class="card-body">
-    <p class="card-text">{{matchResult.playerKm}} - {{matchResult.opponentKm}}</p>
-    <p class="card-text">{{matchResult.scores}}</p>
+    <div class="card-title app-card-title">
+      <div>{{matchResult.playerName }}</div>
+      <h1>{{matchResult.playerPoints}} {{matchResult.opponentPoints}}</h1>
+      <div>{{matchResult.opponentName}}</div>
+    </div>
+    <p class="card-text"> {{matchResult.playerKm}} km - {{matchResult.opponentKm}} km</p>
   </div>
 </div>
