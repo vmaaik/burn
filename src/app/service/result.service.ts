@@ -12,7 +12,6 @@ export class ResultService {
   }
 
   getActiveMatchesResults() {
-    console.log('getActiveMatchesResults');
     return this.apiService.get(environment.matchResultsEndpoint);
   }
 

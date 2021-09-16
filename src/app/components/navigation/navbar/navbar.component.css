@@ -1,4 +1,7 @@
-.app-navbar{
-  margin-bottom: 10px;
-
+.app-navbar {
+  background: black;
+  border-bottom-left-radius: 25px;
+  margin-bottom: 15px;
+  border-bottom-right-radius: 25px;
+  height: 200px;
 }

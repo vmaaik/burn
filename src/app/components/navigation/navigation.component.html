@@ -14,6 +14,7 @@
       [title]="'SEZON'"
       [height]="'150px'"
       [subtitle]="'Ranking oraz symulacja'"
+      [link]="'season'"
     >
 
     </app-menu-item>
@@ -21,18 +22,21 @@
   </div>
 </div>
   <div class="row">
-
-
     <div class="col app-column">
-      <app-menu-item [title]="'TERMINARZ'" ></app-menu-item>
+      <app-menu-item [title]="'TERMINARZ'"
+                     [link]="'calendar'"></app-menu-item>
     </div>
   </div>
   <div class="row">
     <div class="col app-column">
-      <app-menu-item [title]="'ZBIÓRKA'" [subtitle]="'Wyniki zbiórki charytatywnej'"></app-menu-item>
+      <app-menu-item [title]="'ZBIÓRKA'"
+                     [link]="'donation'"
+                     [subtitle]="'Wyniki zbiórki charytatywnej'"></app-menu-item>
     </div>
     <div class="col app-column">
-      <app-menu-item  [title]="'STATS'" [subtitle]="'Statystyki sezonu, klasyfikacja medalowa'"></app-menu-item>
+      <app-menu-item  [title]="'STATS'"
+                      [link]="'stats'"
+                      [subtitle]="'Statystyki sezonu, klasyfikacja medalowa'"></app-menu-item>
     </div>
   </div>
 </div>
