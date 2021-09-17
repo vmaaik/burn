@@ -11,8 +11,8 @@ export class ResultService {
   constructor(private apiService: ApiService) {
   }
 
-  getActiveMatchesResults() {
-    return this.apiService.get(environment.matchResultsEndpoint);
+  getActiveMatchesResults(status: string) {
+    return this.apiService.get(environment.matchResultsEndpoint + status);
   }
 
   getSeasonResults() {

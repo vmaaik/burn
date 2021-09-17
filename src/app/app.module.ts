@@ -17,6 +17,7 @@ import { DonationResultsItemComponent } from './components/donation/donation-res
 import { MenuItemComponent } from './components/navigation/menu-item/menu-item.component';
 import { NavbarComponent } from './components/navigation/navbar/navbar.component';
 import {RouterModule} from "@angular/router";
+import { MenuBottomComponent } from './components/navigation/menu-bottom/menu-bottom.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {RouterModule} from "@angular/router";
     DonationResultsComponent,
     DonationResultsItemComponent,
     MenuItemComponent,
-    NavbarComponent
+    NavbarComponent,
+    MenuBottomComponent
   ],
   imports: [
     BrowserModule,

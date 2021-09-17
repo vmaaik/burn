@@ -14,7 +14,7 @@ export class LiveResultsComponent implements OnInit {
   matchResults: MatchResult[] = [];
 
   ngOnInit(): void {
-    this.resultService.getActiveMatchesResults()
+    this.resultService.getActiveMatchesResults("ACTIVE")
       .subscribe((results: MatchResult[]) => this.matchResults = results)
   }
 

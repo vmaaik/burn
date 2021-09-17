@@ -5,18 +5,29 @@
 
 }
 .app-card-body{
-  color: black;
+  color: #243055;
+}
+
+.app-title{
+  font-weight: 700;
 }
 
 .app-card{
-  border: black solid 2px;
+  /*border: black solid 2px;*/
+  border: transparent;
   border-radius: 15px;
-  background: #f8f9f;
+  background: #D8E2EE;
   cursor: pointer;
+
 }
 .app-card:hover {
   background-color: #F5F5F5;
   /*box-shadow: 0px 15px 20px rgba(224,224,224,1);*/
   color: #fff;
   transform: translateY(-5px);
+}
+
+.app-card:active {
+  transform: scale(1.1);
+  transition: .5s;
 }

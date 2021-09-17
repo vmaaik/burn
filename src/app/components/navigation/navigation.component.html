@@ -1,19 +1,24 @@
-<div class="container">
+<div class="alert " role="alert" style="  align-content: center; margin: 12px; background: #FEEEEE; border-radius: 25px; border-color: #EE786C ">
+  <img style="  filter: invert(82%) sepia(57%) saturate(3821%) hue-rotate(310deg) brightness(91%) contrast(106%);"
+       src="assets/icons/info_black_24dp.svg" width="24" height="24" alt=""> Hej! Nowy sezon już niebawem!
+</div>
+
+<div class="container align-items-center " style="padding-left: 30px; padding-right: 30px;">
 <div class="row">
-  <div class="col app-column">
+  <div class="col app-column" >
     <app-menu-item
-      [title]="'NA ŻYWO'"
+      [title]="'Na Żywo'"
       [height]="'150px'"
-      [subtitle]="'Wyniki aktualnej kolejki'"
+      [subtitle]="'Runda 3'"
       [link]="'live'"
     ></app-menu-item>
   </div>
 
   <div class="col app-column">
     <app-menu-item
-      [title]="'SEZON'"
+      [title]="'Sezon'"
       [height]="'150px'"
-      [subtitle]="'Ranking oraz symulacja'"
+      [subtitle]="'Sezon 7'"
       [link]="'season'"
     >
 
@@ -23,20 +28,20 @@
 </div>
   <div class="row">
     <div class="col app-column">
-      <app-menu-item [title]="'TERMINARZ'"
+      <app-menu-item [title]="'Terminarz'"
                      [link]="'calendar'"></app-menu-item>
     </div>
   </div>
   <div class="row">
     <div class="col app-column">
-      <app-menu-item [title]="'ZBIÓRKA'"
+      <app-menu-item [title]="'Zbiórka'"
                      [link]="'donation'"
-                     [subtitle]="'Wyniki zbiórki charytatywnej'"></app-menu-item>
+                     [subtitle]="'450 zł'"></app-menu-item>
     </div>
     <div class="col app-column">
-      <app-menu-item  [title]="'STATS'"
+      <app-menu-item  [title]="'Stats'"
                       [link]="'stats'"
-                      [subtitle]="'Statystyki sezonu, klasyfikacja medalowa'"></app-menu-item>
+                      [subtitle]="'756 km'"></app-menu-item>
     </div>
   </div>
 </div>

@@ -1,8 +1,10 @@
 .app-card{
   margin: 10px;
-  border: black solid 2px;
+  /*border: black solid 2px;*/
   border-radius: 15px;
-  background: white;
+  border: transparent;
+  background: #D8E2EE;
+  font-weight: 700;
 }
 
 .app-card-title{
@@ -10,4 +12,6 @@
   align-items: center;
   display: flex;
   font-size: 20px;
+
+
 }
