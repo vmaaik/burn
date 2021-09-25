@@ -1,3 +1,19 @@
-<div *ngFor="let result of seasonResults">
-  <app-season-results-item [athleteResult]="result"></app-season-results-item>
-</div>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Zawodnik</th>
+    <th scope="col">Km</th>
+    <th scope="col">Punkty</th>
+  </tr>
+  </thead>
+  <tbody *ngFor="let result of results; index as i;">
+  <tr>
+    <th scope="row">{{i + 1}}</th>
+    <td>{{result.name}}</td>
+    <td>{{result.totalKm}}</td>
+    <td>{{result.totalPoints}}</td>
+  </tr>
+  </tbody>
+</table>
+

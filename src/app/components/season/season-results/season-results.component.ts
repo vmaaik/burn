@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnChanges, OnInit} from '@angular/core';
 import {AthleteSeasonResult} from "../../../interface/athlete-season-result";
 
 @Component({
@@ -6,15 +6,6 @@ import {AthleteSeasonResult} from "../../../interface/athlete-season-result";
   templateUrl: './season-results.component.html',
   styleUrls: ['./season-results.component.css']
 })
-export class SeasonResultsComponent implements OnInit {
-
-  constructor() {
-  }
-
-  @Input() seasonResults: AthleteSeasonResult[];
-
-  ngOnInit(): void {
-
-  }
-
+export class SeasonResultsComponent {
+  @Input() results: AthleteSeasonResult[];
 }

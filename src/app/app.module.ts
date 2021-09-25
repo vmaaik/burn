@@ -10,7 +10,6 @@ import { LiveResultItemComponent } from './components/live/live-result-item/live
 import { LiveResultsComponent } from './components/live/live-results/live-results.component';
 import { SeasonComponent } from './components/season/season.component';
 import { SeasonResultsComponent } from './components/season/season-results/season-results.component';
-import { SeasonResultsItemComponent } from './components/season/season-results-item/season-results-item.component';
 import { DonationComponent } from './components/donation/donation.component';
 import { DonationResultsComponent } from './components/donation/donation-results/donation-results.component';
 import { DonationResultsItemComponent } from './components/donation/donation-results-item/donation-results-item.component';
@@ -28,7 +27,6 @@ import { MenuBottomComponent } from './components/navigation/menu-bottom/menu-bo
     LiveResultsComponent,
     SeasonComponent,
     SeasonResultsComponent,
-    SeasonResultsItemComponent,
     DonationComponent,
     DonationResultsComponent,
     DonationResultsItemComponent,
